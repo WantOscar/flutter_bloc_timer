@@ -11,7 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: App(),
+      title: "Bloc Timer",
+      theme: ThemeData(
+        colorScheme: const ColorScheme.light(
+          primary: Color.fromRGBO(72, 74, 12, 1),
+        ),
+      ),
+      home: const App(),
       debugShowCheckedModeBanner: false,
     );
   }
